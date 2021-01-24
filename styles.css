@@ -13,7 +13,7 @@ header {
 
 
 header ul {
-  text-align: center; 
+  text-align: center;
 }
 
 header li {
@@ -21,6 +21,10 @@ header li {
   text-decoration: none;
   display: inline;
   padding: 10px;
+}
+
+header li.active a {
+  color: #05A2A2;
 }
 
 body {
@@ -61,11 +65,19 @@ article {
   margin: 0 auto;
   padding: 20px;
 }
-.image-selfie {
+
+img.image-selfie {
   float: left;
-  width: 300px;
+  max-width: 400px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  img.image-selfie {
+    float: none;
+    max-width: 100%;
+  }
 }
 
 article li {
@@ -93,10 +105,8 @@ h5{
   font-size: 1.5em;
   font-weight: bold;
 }
-.image-pencils {
-align-self: center;
-  max-width: 900px;
-  margin-right: 20px;
+img.image-pencils {
+  width: 100%;
   margin-bottom: 20px;
 }
 
